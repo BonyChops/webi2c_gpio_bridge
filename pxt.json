@@ -1,0 +1,35 @@
+{
+    "name": "WebI2C_GPIO_bridge",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "bluetooth": "*"
+    },
+    "files": [
+        "main.ts",
+        "README.md",
+        "custom.ts",
+        "main.py"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "event_service": 0,
+                    "eddystone_url": 0,
+                    "eddystone_uid": 0
+                },
+                "gatt_table_size": "0x300"
+            }
+        }
+    }
+}
